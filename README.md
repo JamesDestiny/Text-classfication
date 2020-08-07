@@ -1,8 +1,8 @@
 # Text-classfication
 简单文本分类，数据集太大，保存至网盘链接: https://pan.baidu.com/s/1AdfVSzM_uO3nMdDGqFpCGA  
 密码: sdn5
-SVM.txt文件位于项目路径
-cnews.train.txt文件位于项目路径
+SVM.txt文件位于项目路径/
+cnews.train.txt文件位于项目路径/dataset
 demo图片
-![image]
-![image]
+![image](https://github.com/JamesDestiny/Text-classfication/blob/master/3.png)
+![image](https://github.com/JamesDestiny/Text-classfication/blob/master/4.png)
