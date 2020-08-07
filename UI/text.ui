@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>中文文本分类器</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>411</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbBox_Mode">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>&lt;1&gt;：测试集随机抽取</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;2&gt;：输入内容识别</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>450</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>256</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模式选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>110</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输入</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>440</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分类</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>440</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>258</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>文本内容</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>190</y>
+     <width>258</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>分类结果</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>40</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>抽取</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>500</y>
+     <width>681</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>711</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>721</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>160</y>
+     <width>21</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>721</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>721</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>20</y>
+     <width>256</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模型选择</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cbBox_Mode_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>50</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>&lt;1&gt;：神经网络模型</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;2&gt;：SVM模型</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&lt;3&gt;：简单RNN模型</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>110</y>
+     <width>102</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cbBox_Mode</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>cbBox_Mode_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>466</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_2_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_3_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_4_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_5_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>640</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textBrowser_2</sender>
+   <signal>textChanged()</signal>
+   <receiver>Form</receiver>
+   <slot>tB_2_Callbaack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_6_Callback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbBox_Mode_2</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>cbBox_Mode_2_Cakllback()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>cbBox_Mode_Callback()</slot>
+  <slot>pB_Callback()</slot>
+  <slot>pB_2_Callback()</slot>
+  <slot>pB_3_Callback()</slot>
+  <slot>pB_4_Callback()</slot>
+  <slot>pB_5_Callback()</slot>
+  <slot>tB_2_Callbaack()</slot>
+  <slot>pB_6_Callback()</slot>
+  <slot>cbBox_Mode_2_Cakllback()</slot>
+ </slots>
+</ui>
